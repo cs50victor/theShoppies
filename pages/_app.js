@@ -1,11 +1,12 @@
-import "../styles/globals.css";
-import GlobalStyles from "./../components/GlobalStyles";
+import { GlobalStyles } from "twin.macro";
+import BaseStyle from "./../baseStyle";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
-      <Component {...pageProps} />;
+      <BaseStyle whiteColor />
+      <Component {...pageProps} />
     </>
   );
 }
